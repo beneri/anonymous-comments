@@ -1,0 +1,29 @@
+<h2 id="comment_form">Write you comment!</h2>
+<form class="form-horizontal" method="POST" action="#comment_form">
+<fieldset>
+  <input type="hidden" name="entry_id" value="{{entry_id}}">
+<!-- Form Name -->
+{{comment_status}}
+<!-- Text input-->
+<div class="form-group">
+  <div class="col-md-12">
+  <input id="author_name" name="author_name" type="text" placeholder="Anonymous" class="form-control input-md">
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <div class="col-md-12">                     
+    <textarea class="form-control" id="content" name="content" placeholder="Comment" ></textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <div class="col-md-12">
+    <button id="singlebutton" name="submit" class="btn btn-primary" type="submit" value="submit">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+  </form>
